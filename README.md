@@ -41,7 +41,7 @@
 		scp -i [clave ssh].pem ./httpd.conf ec2-user@[ip-instancia]:~/httpd/httpd.conf
 ## 14. subir el front a /www
 	Powershell
-		scp -r -i [clave ssh].pem ./www/ ec2-user@[ip-instancia]:~/www/
+		scp -r -i [clave ssh].pem ./www ec2-user@[ip-instancia]:~/www
 ## 15. añadir el docker-compose.yml a la home de ec2-user
 	revisar el nombre del .war antes de subirlo
 	scp -i [clave ssh].pem ./docker-compose.yml ec2-user@[ip-instancia]:~/docker-compose.yml
